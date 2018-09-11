@@ -33,6 +33,19 @@ namespace cf
 
         }
 
+        private void 另存为ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            SaveFileDialog SaveFileDialog1 = new SaveFileDialog();
+            string Fname;
+            SaveFileDialog1.Filter = "文本文件(*.txt)|*.txt";
+            SaveFileDialog1.Title = "保存文件 ";
+            SaveFileDialog1.RestoreDirectory = true;
+            SaveFileDialog1.ShowDialog();
+            Fname = SaveFileDialog1.FileName;
+            if (Fname != "")
+                this.TextBox.SaveFile(Fname, RichTextBoxStreamType.PlainText);
+        }
+
        
     }
 }

@@ -6,3 +6,4 @@ H:\assembly\cf\cf\obj\Debug\cf.Properties.Resources.resources
 H:\assembly\cf\cf\obj\Debug\cf.csproj.GenerateResource.Cache
 H:\assembly\cf\cf\obj\Debug\cf.exe
 H:\assembly\cf\cf\obj\Debug\cf.pdb
+H:\assembly\cf\cf\obj\Debug\cf.csprojResolveAssemblyReference.cache

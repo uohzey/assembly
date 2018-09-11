@@ -30,14 +30,14 @@
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.文件FToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.词法编辑WToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.打开ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.另存为ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripSeparator();
             this.退出ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.TextBox = new System.Windows.Forms.TextBox();
+            this.词法编辑WToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
+            this.TextBox = new System.Windows.Forms.RichTextBox();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -63,46 +63,37 @@
             this.文件FToolStripMenuItem.Size = new System.Drawing.Size(69, 24);
             this.文件FToolStripMenuItem.Text = "文件(&F)";
             // 
-            // 词法编辑WToolStripMenuItem
-            // 
-            this.词法编辑WToolStripMenuItem.Name = "词法编辑WToolStripMenuItem";
-            this.词法编辑WToolStripMenuItem.Size = new System.Drawing.Size(106, 24);
-            this.词法编辑WToolStripMenuItem.Text = "词法编辑(&W)";
-            this.词法编辑WToolStripMenuItem.Click += new System.EventHandler(this.词法编辑WToolStripMenuItem_Click);
-            // 
             // 打开ToolStripMenuItem
             // 
             this.打开ToolStripMenuItem.Name = "打开ToolStripMenuItem";
-            this.打开ToolStripMenuItem.Size = new System.Drawing.Size(152, 24);
+            this.打开ToolStripMenuItem.Size = new System.Drawing.Size(123, 24);
             this.打开ToolStripMenuItem.Text = "打开";
             this.打开ToolStripMenuItem.Click += new System.EventHandler(this.打开ToolStripMenuItem_Click);
             // 
             // 另存为ToolStripMenuItem
             // 
             this.另存为ToolStripMenuItem.Name = "另存为ToolStripMenuItem";
-            this.另存为ToolStripMenuItem.Size = new System.Drawing.Size(152, 24);
+            this.另存为ToolStripMenuItem.Size = new System.Drawing.Size(123, 24);
             this.另存为ToolStripMenuItem.Text = "另存为";
+            this.另存为ToolStripMenuItem.Click += new System.EventHandler(this.另存为ToolStripMenuItem_Click);
             // 
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(149, 6);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(120, 6);
             // 
             // 退出ToolStripMenuItem
             // 
             this.退出ToolStripMenuItem.Name = "退出ToolStripMenuItem";
-            this.退出ToolStripMenuItem.Size = new System.Drawing.Size(152, 24);
+            this.退出ToolStripMenuItem.Size = new System.Drawing.Size(123, 24);
             this.退出ToolStripMenuItem.Text = "退出";
             // 
-            // TextBox
+            // 词法编辑WToolStripMenuItem
             // 
-            this.TextBox.Location = new System.Drawing.Point(21, 43);
-            this.TextBox.Multiline = true;
-            this.TextBox.Name = "TextBox";
-            this.TextBox.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.TextBox.Size = new System.Drawing.Size(593, 574);
-            this.TextBox.TabIndex = 1;
-            this.TextBox.WordWrap = false;
+            this.词法编辑WToolStripMenuItem.Name = "词法编辑WToolStripMenuItem";
+            this.词法编辑WToolStripMenuItem.Size = new System.Drawing.Size(106, 24);
+            this.词法编辑WToolStripMenuItem.Text = "词法编辑(&W)";
+            this.词法编辑WToolStripMenuItem.Click += new System.EventHandler(this.词法编辑WToolStripMenuItem_Click);
             // 
             // textBox1
             // 
@@ -126,14 +117,24 @@
             this.textBox2.TabIndex = 3;
             this.textBox2.WordWrap = false;
             // 
+            // TextBox
+            // 
+            this.TextBox.Location = new System.Drawing.Point(31, 43);
+            this.TextBox.Name = "TextBox";
+            this.TextBox.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.ForcedBoth;
+            this.TextBox.Size = new System.Drawing.Size(604, 574);
+            this.TextBox.TabIndex = 4;
+            this.TextBox.Text = "";
+            this.TextBox.WordWrap = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1297, 647);
+            this.Controls.Add(this.TextBox);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.TextBox);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
@@ -154,9 +155,9 @@
         private System.Windows.Forms.ToolStripSeparator toolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem 退出ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 词法编辑WToolStripMenuItem;
-        private System.Windows.Forms.TextBox TextBox;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.RichTextBox TextBox;
     }
 }
 
